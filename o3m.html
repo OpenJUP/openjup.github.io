@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JUP Community Dashboards</title>
+    <style>
+      /* Reset & base */
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        background: #f8f9fa;
+        color: #333;
+        line-height: 1.6;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+        word-break: break-all;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      .container {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      .section {
+        margin-bottom: 2rem;
+      }
+      .section h2 {
+        border-bottom: 2px solid #dee2e6;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        color: #495057;
+      }
+      .card {
+        background: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .card .desc {
+        font-weight: 500;
+        color: #212529;
+      }
+      .card .link-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .card button.copy-btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.9rem;
+        border: none;
+        background: #28a745;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.2s ease;
+      }
+      .card button.copy-btn:hover {
+        background: #218838;
+      }
+      /* Responsive text size */
+      @media (max-width: 600px) {
+        .card {
+          padding: 0.75rem;
+        }
+      }
+      /* A simple tooltip style for copy confirmation */
+      .tooltip {
+        font-size: 0.8rem;
+        color: #28a745;
+        margin-left: 0.5rem;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      .tooltip.show {
+        opacity: 1;
+      }
+      .credit {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #6c757d;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>JUP Community Dashboards</h1>
+
+      <!-- JUP Section -->
+      <div class="section" id="jup">
+        <h2>JUP</h2>
+        <div class="card">
+          <div class="desc">Jupiter Ultra Mode Fees by <strong>FlyingFish</strong></div>
+          <div class="link-wrapper">
+            <a
+              href="https://flipsidecrypto.xyz/flyingfish/jupiter-ultra-mode-fees-kOtd0W"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-text"
+              >flipsidecrypto.xyz/flyingfish/jupiter-ultra-mode-fees-kOtd0W</a
+            >
+            <button
+              class="copy-btn"
+              onclick="copyToClipboard('flipsidecrypto.xyz/flyingfish/jupiter-ultra-mode-fees-kOtd0W', this)"
+            >
+              Copy
+            </button>
+            <span class="tooltip"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- JLP Section -->
+      <div class="section" id="jlp">
+        <h2>JLP</h2>
+        <!-- JUP Perps Stats by FlyingFish -->
+        <div class="card">
+          <div class="desc">JUP Perps Stats by <strong>FlyingFish</strong></div>
+          <div class="link-wrapper">
+            <a
+              href="https://flipsidecrypto.xyz/flyingfish/jup-perps-stats-yLSGj_"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-text"
+              >flipsidecrypto.xyz/flyingfish/jup-perps-stats-yLSGj_</a
+            >
+            <button
+              class="copy-btn"
+              onclick="copyToClipboard('flipsidecrypto.xyz/flyingfish/jup-perps-stats-yLSGj_', this)"
+            >
+              Copy
+            </button>
+            <span class="tooltip"></span>
+          </div>
+        </div>
+        <!-- Jupiter Perps Analytics Dashboard by Gauntlet -->
+        <div class="card">
+          <div class="desc">
+            Jupiter Perps Analytics Dashboard by <strong>Gauntlet</strong>
+          </div>
+          <div class="link-wrapper">
+            <a
+              href="https://dashboards.gauntlet.xyz/protocols/jupiter"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-text"
+              >dashboards.gauntlet.xyz/protocols/jupiter</a
+            >
+            <button
+              class="copy-btn"
+              onclick="copyToClipboard('dashboards.gauntlet.xyz/protocols/jupiter', this)"
+            >
+              Copy
+            </button>
+            <span class="tooltip"></span>
+          </div>
+        </div>
+        <!-- Jupiter Perps Risk Dashboard -->
+        <div class="card">
+          <div class="desc">Jupiter Perps Risk Dashboard</div>
+          <div class="link-wrapper">
+            <a
+              href="https://community.chaoslabs.xyz/jupiter/risk/overview"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-text"
+              >community.chaoslabs.xyz/jupiter/risk/overview</a
+            >
+            <button
+              class="copy-btn"
+              onclick="copyToClipboard('community.chaoslabs.xyz/jupiter/risk/overview', this)"
+            >
+              Copy
+            </button>
+            <span class="tooltip"></span>
+          </div>
+        </div>
+        <!-- Hedge your $JLP by FlyingFish -->
+        <div class="card">
+          <div class="desc">Hedge your <strong>$JLP</strong> by <strong>FlyingFish</strong></div>
+          <div class="link-wrapper">
+            <a
+              href="https://flipsidecrypto.xyz/flyingfish/hedge-your-jlp-gP4v8v"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-text"
+              >flipsidecrypto.xyz/flyingfish/hedge-your-jlp-gP4v8v</a
+            >
+            <button
+              class="copy-btn"
+              onclick="copyToClipboard('flipsidecrypto.xyz/flyingfish/hedge-your-jlp-gP4v8v', this)"
+            >
+              Copy
+            </button>
+            <span class="tooltip"></span>
+          </div>
+        </div>
+        <!-- JLP Real Time Fees by 0xcypher -->
+        <div class="card">
+          <div class="desc">JLP Real Time Fees by <strong>0xcypher</strong></div>
+          <div class="link-wrapper">
+            <a
+              href="https://flipsidecrypto.xyz/0xcypher/jlp-real-time-fees-_4xPyY"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-text"
+              >flipsidecrypto.xyz/0xcypher/jlp-real-time-fees-_4xPyY</a
+            >
+            <button
+              class="copy-btn"
+              onclick="copyToClipboard('flipsidecrypto.xyz/0xcypher/jlp-real-time-fees-_4xPyY', this)"
+            >
+              Copy
+            </button>
+            <span class="tooltip"></span>
+          </div>
+        </div>
+        <!-- JLP Discord -->
+        <div class="card">
+          <div class="desc">JLP Discord</div>
+          <div class="link-wrapper">
+            <a
+              href="https://discord.com/channels/897540204506775583/1215498160101658664"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-text"
+              >discord.com/channels/897540204506775583/1215498160101658664</a
+            >
+            <button
+              class="copy-btn"
+              onclick="copyToClipboard('discord.com/channels/897540204506775583/1215498160101658664', this)"
+            >
+              Copy
+            </button>
+            <span class="tooltip"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Devs Section -->
+      <div class="section" id="devs">
+        <h2>Devs</h2>
+        <!-- OpenJUP/jlp-Data-fetcher -->
+        <div class="card">
+          <div class="desc">OpenJUP/jlp-Data-fetcher</div>
+          <div class="link-wrapper">
+            <a
+              href="https://github.com/OpenJUP/jlp-Data-fetcher"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-text"
+              >github.com/OpenJUP/jlp-Data-fetcher</a
+            >
+            <button
+              class="copy-btn"
+              onclick="copyToClipboard('github.com/OpenJUP/jlp-Data-fetcher', this)"
+            >
+              Copy
+            </button>
+            <span class="tooltip"></span>
+          </div>
+        </div>
+        <!-- julianfssen/jupiter-perps-anchor-idl-parsing -->
+        <div class="card">
+          <div class="desc">julianfssen/jupiter-perps-anchor-idl-parsing</div>
+          <div class="link-wrapper">
+            <a
+              href="https://github.com/julianfssen/jupiter-perps-anchor-idl-parsing"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-text"
+              >github.com/julianfssen/jupiter-perps-anchor-idl-parsing</a
+            >
+            <button
+              class="copy-btn"
+              onclick="copyToClipboard('github.com/julianfssen/jupiter-perps-anchor-idl-parsing', this)"
+            >
+              Copy
+            </button>
+            <span class="tooltip"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="credit">
+        Celebrating the amazing creators behind these dashboards!
+      </div>
+    </div>
+
+    <script>
+      // Function to copy text to clipboard and show a tooltip confirmation
+      function copyToClipboard(text, btn) {
+        // Use Clipboard API if available
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(text).then(
+            function () {
+              showTooltip(btn, "Copied!");
+            },
+            function () {
+              showTooltip(btn, "Error!");
+            }
+          );
+        } else {
+          // Fallback for older browsers
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          document.body.appendChild(textArea);
+          textArea.select();
+          try {
+            document.execCommand("copy");
+            showTooltip(btn, "Copied!");
+          } catch (err) {
+            showTooltip(btn, "Error!");
+          }
+          document.body.removeChild(textArea);
+        }
+      }
+
+      function showTooltip(btn, message) {
+        const tooltip = btn.nextElementSibling;
+        tooltip.textContent = message;
+        tooltip.classList.add("show");
+        setTimeout(() => {
+          tooltip.classList.remove("show");
+          tooltip.textContent = "";
+        }, 1500);
+      }
+    </script>
+  </body>
+</html>

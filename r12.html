@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter Community Dashboards</title>
+    <style>
+        :root {
+            --bg-color: #1a1a1a;
+            --card-bg: #2d2d2d;
+            --accent: #4a90e2;
+            --text: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-color);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: var(--accent);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: var(--accent);
+            margin: 0 0 10px 0;
+            font-size: 1.4rem;
+        }
+
+        .link-entry {
+            margin: 8px 0;
+            padding: 8px;
+            border-left: 3px solid var(--accent);
+        }
+
+        .link-title {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            display: block;
+        }
+
+        .creator {
+            color: #888;
+            font-size: 0.9em;
+            margin-left: 5px;
+        }
+
+        .url-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 4px;
+        }
+
+        .url {
+            color: #4a90e2;
+            font-size: 0.9em;
+            word-break: break-word;
+            flex-grow: 1;
+        }
+
+        .copy-btn {
+            background: #3d3d3d;
+            border: none;
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .copy-btn:hover {
+            background: var(--accent);
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Jupiter Community Resources</h1>
+        
+        <div class="category">
+            <h2>JUP</h2>
+            <div class="link-entry">
+                <a href="https://flipsidecrypto.xyz/flyingfish/jupiter-ultra-mode-fees-kOtd0W" target="_blank" class="link-title">Jupiter Ultra Mode Fees</a>
+                <span class="creator">by FlyingFish</span>
+                <div class="url-row">
+                    <span class="url">flipsidecrypto.xyz/flyingfish/jupiter-ultra-mode-fees-kOtd0W</span>
+                    <button class="copy-btn">Copy</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>JLP</h2>
+            <!-- Repeat similar structure for JLP entries -->
+            <div class="link-entry">
+                <a href="https://flipsidecrypto.xyz/flyingfish/jup-perps-stats-yLSGj_" target="_blank" class="link-title">JUP Perps Stats</a>
+                <span class="creator">by FlyingFish</span>
+                <div class="url-row">
+                    <span class="url">flipsidecrypto.xyz/flyingfish/jup-perps-stats-yLSGj_</span>
+                    <button class="copy-btn">Copy</button>
+                </div>
+            </div>
+            <!-- Add other JLP entries following same pattern -->
+        </div>
+
+        <div class="category">
+            <h2>Devs</h2>
+            <div class="link-entry">
+                <a href="https://github.com/OpenJUP/jlp-Data-fetcher" target="_blank" class="link-title">GitHub Repository</a>
+                <div class="url-row">
+                    <span class="url">github.com/OpenJUP/jlp-Data-fetcher</span>
+                    <button class="copy-btn">Copy</button>
+                </div>
+            </div>
+            <!-- Add other Dev entries -->
+        </div>
+    </div>
+
+    <div class="toast" id="toast">Copied!</div>
+
+    <script>
+        document.querySelectorAll('.copy-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const url = e.target.parentElement.querySelector('.url').textContent;
+                navigator.clipboard.writeText(url);
+                
+                const toast = document.getElementById('toast');
+                toast.style.display = 'block';
+                setTimeout(() => {
+                    toast.style.display = 'none';
+                }, 1500);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter Community Dashboards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            color: #f39c12;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            background: #1e1e1e;
+            border-radius: 10px;
+        }
+        .link-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #444;
+        }
+        .link-container:last-child {
+            border-bottom: none;
+        }
+        .copy-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .copy-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Copied: ' + text);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Jupiter Community Dashboards</h1>
+
+        <div class="section">
+            <h2>JUP</h2>
+            <div class="link-container">
+                <span>Jupiter Ultra Mode Fees by FlyingFish</span>
+                <button class="copy-btn" onclick="copyToClipboard('flipsidecrypto.xyz/flyingfish/jupiter-ultra-mode-fees-kOtd0W')">Copy</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>JLP</h2>
+            <div class="link-container">
+                <span>JUP Perps Stats by FlyingFish</span>
+                <button class="copy-btn" onclick="copyToClipboard('flipsidecrypto.xyz/flyingfish/jup-perps-stats-yLSGj_')">Copy</button>
+            </div>
+            <div class="link-container">
+                <span>Jupiter Perps Analytics Dashboard by Gauntlet</span>
+                <button class="copy-btn" onclick="copyToClipboard('dashboards.gauntlet.xyz/protocols/jupiter')">Copy</button>
+            </div>
+            <div class="link-container">
+                <span>Jupiter Perps Risk Dashboard</span>
+                <button class="copy-btn" onclick="copyToClipboard('community.chaoslabs.xyz/jupiter/risk/overview')">Copy</button>
+            </div>
+            <div class="link-container">
+                <span>Hedge your $JLP by FlyingFish</span>
+                <button class="copy-btn" onclick="copyToClipboard('flipsidecrypto.xyz/flyingfish/hedge-your-jlp-gP4v8v')">Copy</button>
+            </div>
+            <div class="link-container">
+                <span>JLP Real Time Fees by 0xcypher</span>
+                <button class="copy-btn" onclick="copyToClipboard('flipsidecrypto.xyz/0xcypher/jlp-real-time-fees-_4xPyY')">Copy</button>
+            </div>
+            <div class="link-container">
+                <span>JLP Discord</span>
+                <button class="copy-btn" onclick="copyToClipboard('discord.com/channels/897540204506775583/1215498160101658664')">Copy</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Devs</h2>
+            <div class="link-container">
+                <span>JLP Data Fetcher</span>
+                <button class="copy-btn" onclick="copyToClipboard('github.com/OpenJUP/jlp-Data-fetcher')">Copy</button>
+            </div>
+            <div class="link-container">
+                <span>Jupiter Perps Anchor IDL Parsing</span>
+                <button class="copy-btn" onclick="copyToClipboard('github.com/julianfssen/jupiter-perps-anchor-idl-parsing')">Copy</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
